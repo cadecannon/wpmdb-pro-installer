@@ -1,0 +1,38 @@
+{
+  "name": "cadecannon/wpmdb-pro-installer",
+  "description": "An install helper for Wordpress Migrate DB Pro",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cade Cannon",
+      "email": "ccannon@torsionmobile.com"
+    }
+  ],
+  "keywords": [
+    "wordpress", "composer", "wp", "plugin", "wp-migrate-db", "env", "pro", "wpmdb"
+  ],
+  "require": {
+    "php": ">=5.5",
+    "composer-plugin-api": "^1.0",
+    "vlucas/phpdotenv": "^2.2"
+  },
+  "require-dev": {
+    "composer/composer": "1.0.*",
+    "phpunit/phpunit": "4.8.*",
+    "squizlabs/php_codesniffer": "2.*",
+    "satooshi/php-coveralls": "1.*"
+  },
+  "autoload": {
+    "psr-4": { "CadeCannon\\WPMDBProInstaller\\": "src/WPMDBProInstaller" }
+  },
+  "extra": {
+    "class": "CadeCannon\\WPMDBProInstaller\\Plugin"
+  },
+  "scripts": {
+    "lint": "phpcs src tests --standard=PSR2",
+    "test": "phpunit",
+    "coverage": "phpunit --coverage-html coverage",
+    "coveralls": "coveralls"
+  }
+}
