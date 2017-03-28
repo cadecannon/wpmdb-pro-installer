@@ -1,17 +1,12 @@
 # WPMDB PRO Installer
 
-[![Packagist](https://img.shields.io/packagist/v/philippbaschke/acf-pro-installer.svg?maxAge=3600)](https://packagist.org/packages/philippbaschke/acf-pro-installer)
-[![Packagist](https://img.shields.io/packagist/l/philippbaschke/acf-pro-installer.svg?maxAge=2592000)](https://github.com/PhilippBaschke/acf-pro-installer/blob/master/LICENSE)
-[![Travis](https://img.shields.io/travis/PhilippBaschke/acf-pro-installer.svg?maxAge=3600)](https://travis-ci.org/PhilippBaschke/acf-pro-installer)
-[![Coveralls](https://img.shields.io/coveralls/PhilippBaschke/acf-pro-installer.svg?maxAge=3600)](https://coveralls.io/github/PhilippBaschke/acf-pro-installer)
-
 A composer plugin that makes installing [WP Migrate DB Pro] with [composer] easier.
 
 This package borrows very heavily from [acf-pro-installer] from Philipp Baschke.  Special thanks to Philipp for doing 99% of the work.
 
 This package reads your :key: WPMDB PRO key from the **environment** or a **.env file**.
 
-[WPMDB PRO]: https://deliciousbrains.com/wp-migrate-db-pro/
+[WP Migrate DB Pro]: https://deliciousbrains.com/wp-migrate-db-pro/
 [composer]: https://github.com/composer/composer
 [acf-pro-installer]: https://github.com/PhilippBaschke/acf-pro-installer
 
@@ -29,7 +24,7 @@ This package reads your :key: WPMDB PRO key from the **environment** or a **.env
     "type": "wordpress-plugin",
     "dist": {
       "type": "zip",
-      "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+      "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip"
     },
     "require": {
       "cadecannon/wpmdb-pro-installer": "^1.0",
