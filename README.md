@@ -4,7 +4,7 @@ A composer plugin that makes installing [WP Migrate DB Pro] with [composer] easi
 
 This package borrows very heavily from [acf-pro-installer] from Philipp Baschke.  Special thanks to Philipp for doing 99% of the work.
 
-This package reads your :key: WPMDB PRO key from the **environment** or a **.env file**.
+This package reads your :key: WPMDB PRO key and SITE DOMAIN from the **environment** or a **.env file**.
 
 [WP Migrate DB Pro]: https://deliciousbrains.com/wp-migrate-db-pro/
 [composer]: https://github.com/composer/composer
@@ -46,7 +46,18 @@ Alternatively you can add an entry to your **`.env`** file:
 WPMDB_PRO_KEY=Your-Key-Here
 ```
 
-**3. Require WPMDB PRO**
+**3. Make your DOMAIN available**
+
+Set the environment variable **`DOMAIN_CURRENT_SITE`** to your domain without the protocol (i.e. no http:// or https://).  This is utilized by wordpress for multisite so you might already have this in your file.
+
+Alternatively you can add an entry to your **`.env`** file:
+
+```ini
+# .env (same directory as composer.json)
+DOMAIN_CURRENT_SITE=test.dev
+```
+
+**4. Require WPMDB PRO**
 
 ```sh
 composer require deliciousbrains/wp-migrate-db-pro:*
@@ -60,4 +71,4 @@ If you use **`*`**, composer will install the version from the package repositor
 [composer-repositories]: https://getcomposer.org/doc/04-schema.md#repositories
 [composer-versions]: https://getcomposer.org/doc/articles/versions.md
 [package-gist]: https://gist.github.com/fThues/705da4c6574a4441b488
-[wpmdb-account]: https://www.advancedcustomfields.com/my-account/
+[wpmdb-account]: https://deliciousbrains.com/signin/
