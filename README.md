@@ -49,7 +49,7 @@ WPMDB_PRO_KEY=Your-Key-Here
 **3. Require WPMDB PRO**
 
 ```sh
-composer require cadecannon/wpmdb-pro-installer:*
+composer require deliciousbrains/wp-migrate-db-pro:*
 ```
 You can specify an [exact version][composer-versions] (that matches your desired version).
 
