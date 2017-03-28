@@ -134,7 +134,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
             $rfs = $event->getRemoteFilesystem();
             $acfRfs = new RemoteFilesystem(
                 $this->addParameterToUrl($processedUrl,[
-                    'license_key' => $this->getKeyFromEnv(),
+                    'licence_key' => $this->getKeyFromEnv(),
                     'site_url' => $this->getDomainFromEnv()
                 ]),
                 $this->io,
