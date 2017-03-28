@@ -291,6 +291,6 @@ class Plugin implements PluginInterface, EventSubscriberInterface
      */
     protected function addParameterToUrl($url, array $params)
     {
-        return $url & '?' & http_build_query($params, '', '&', PHP_QUERY_RFC3986);
+        return $url . '?' . http_build_query($params, '', '&', PHP_QUERY_RFC3986);
     }
 }
